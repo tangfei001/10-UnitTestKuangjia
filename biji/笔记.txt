@@ -1,0 +1,77 @@
+unittest内容：
+1.unittest介绍(各个组件的介绍)
+2.测试固件
+  a.setUp&tearDown
+  b.setUpClass&tearDownClass
+  c.程序执行的顺序
+  d.测试用例的编写方式
+3.测试执行
+4.构建测试套件
+  a.用例按顺序执行(addTest)
+  b.测试用例执行顺序的详解
+  c.按测试类执行(makeSuite)
+  d.加载测试类(TestLoader)
+  e.按测试模块来执行(TestLoader)
+  f.优化测试套件
+5.分离测试固件(模块化的应用)
+6.测试断言
+  assertEqual(a,b)
+  assertTrue(x)
+  assertIn(a,b)
+  测试断言注意事项
+      不正确的使用if
+	  不正确的使用异常
+7.批量执行测试用例(discover)
+  a.获取所有测试用例
+  b.discover方法的解读
+8.生成测试报告
+  a.Python2生成测试报告
+  b.Python3生成测试报告
+  c.测试报告的注意事项
+  d.新增当前时间
+  https://pypi.org/project/HTMLTestRunner/
+9.unittest的缺陷
+10.Coverage的应用
+
+公司的要求：
+1.发据业务价值
+2.更短的上线时间
+3.更好的软件质量
+4.更少的资源投入
+5.关注用户行为
+6.倡导零缺陷,做有价值的事
+
+
+0代表得到执行的测试总数和全局结果 ， 
+1代表得到成功的显示 ，失败的显示 f，错误的显示 ，错误的显示 e，
+2可以得到详细的信息
+0 (quiet): you just get the total numbers of tests executed and the global result 
+1 (default): you get the same plus a dot for every successful test or a F for every failure 
+2 (verbose): you get the help string of every test and the result
+
+
+
+
+
+None
+
+
+
+
+unittest中常用的装饰器为:
+executedFailure()-->预期失败,不要记录测试是失败的
+skip(reason)-->忽略执行
+skipIf(condition,reason)-->测试是否应该执行
+skipUnless(condition,reason)-->原因描述
+
+
+
+
+
+
+
+
+
+
+
+coverage3 run allTests.py   
